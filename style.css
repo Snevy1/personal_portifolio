@@ -49,6 +49,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+section {
+  padding-top: 100px;
+}
+
 .nav__container {
   background: var(--color-primary);
   display: flex;
@@ -83,11 +87,17 @@ body {
   text-decoration: underline;
 }
 
-section {
-  margin-top: 200px;
-}
 .svg {
-  background: #f7c94b;
+  /* background: #f7c94b; */
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.welcome__explanation {
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 .about {
   margin-top: 5rem;
@@ -107,8 +117,10 @@ section {
 
 .about__info {
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 15px;
 }
 
 .skills {
@@ -177,16 +189,67 @@ section {
   text-align: center;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 .projects h1 {
   text-align: center;
   margin: 1.5rem;
 }
 
+.project__info {
+  display: grid;
+  align-content: center;
+}
+
 .projects article {
+  margin-top: 2rem;
+}
+
+section article h2 {
+  text-align: center;
+  margin: 1rem;
+}
+/* .projects article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin-top: 1rem;
+} */
+
+.project__info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.project__info-container p {
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.project__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.project__links button {
+  background: #f75824;
+}
+
+.icon__project {
+  background: rgba(236, 231, 231, 0.452);
+  padding: 0.7rem;
+  font-size: 2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 
 .services {
@@ -206,6 +269,13 @@ section {
   border-radius: 15px;
   border: 1px solid black;
   padding: 1rem;
+  background: #279bda;
+  transition: all 1s ease;
+}
+
+.services article:hover {
+  box-shadow: 2px 2px black;
+  background: #dc143c;
 }
 
 .service__info p {
@@ -230,4 +300,33 @@ input {
 .contact {
   margin-top: 2rem;
   background: #dde6e1;
+}
+
+@media screen and (max-width: 733px) {
+  .svg {
+    /* background: #f7c94b; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project__info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 1rem;
+    padding: 2rem;
+  }
+
+  .service__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }

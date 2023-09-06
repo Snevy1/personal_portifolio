@@ -10,11 +10,16 @@
       href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      defer
+    ></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <nav>
       <ul class="nav__container">
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -22,8 +27,17 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <section class="svg">
-      <img src="images/laptop.jpg" alt="" />
+    <section class="svg" id="home">
+      <article>
+        <img src="images/laptop.jpg" alt="" />
+      </article>
+
+      <article class="welcome__explanation">
+        <p>
+          Hello there, welcome to my portifolio.Don't forget to contact me if
+          you are impressed by my work and personality
+        </p>
+      </article>
     </section>
 
     <section class="about" id="about">
@@ -33,13 +47,16 @@
         </div>
         <div class="about__info">
           <p>
-            My name is Nevily. I am passionate about web development and new
-            technologies I have vast knowledge in frontend web technologies.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            sint sed autem vero voluptatum maiores perferendis enim nobis
-            quisquam sapiente rerum dolorem, beatae, dolorum, repellat eligendi!
-            Officiis perspiciatis placeat vero.
+            My name is Nevily. I am passionate about web development and the
+            tech space.I have vast knowledge in frontend web technologies and
+            aspiring to be a fullstack developer.
           </p>
+          <h2>Fun facts about me:</h2>
+          <ul>
+            <li>When I was young I wanted to be a policeman</li>
+            <li>I have less than 10 songs on my playlist</li>
+            <li>I love apples!</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -71,69 +88,117 @@
     <section class="projects" id="projects">
       <h1>PROJECTS</h1>
       <article>
-        <div class="project__image">
-          <img src="images/course1.png" alt="" />
-        </div>
-        <div class="project__info">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-            ducimus excepturi accusantium doloribus quis officia placeat
-            similique maiores corrupti dignissimos neque aliquam alias mollitia
-            quo, a praesentium enim tenetur quae!
-          </p>
-        </div>
+        <h2>Restaurant Website</h2>
+        <article class="project__info-container">
+          <div class="project__image">
+            <img src="images/restaurant.png" alt="" />
+          </div>
+          <div class="project__info">
+            <p>
+              This is a multipage restaurant website. I used Javascript to
+              generate all the content on the webpage with single html file.I
+              used webpack to bundle Javascript modules and css files.
+            </p>
+            <p>Languages: Javascript- 80%, CSS: 15%, HTML: 5%</p>
+            <div class="project__links">
+              <a href="#"
+                ><span class="icon__project"
+                  ><i class="uil uil-github"></i></span
+              ></a>
+              <button>Live preview</button>
+            </div>
+          </div>
+        </article>
       </article>
       <article>
-        <div class="project__image">
-          <img src="images/Course2.png" alt="" />
-        </div>
-        <div class="project__info">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-            ducimus excepturi accusantium doloribus quis officia placeat
-            similique maiores corrupti dignissimos neque aliquam alias mollitia
-            quo, a praesentium enim tenetur quae!
-          </p>
-        </div>
+        <h2>Educational Website</h2>
+        <article class="project__info-container">
+          <div class="project__image">
+            <img src="images/education1.png" alt="" />
+          </div>
+          <div class="project__info">
+            <p>
+              This is a multipage educational website with many html files for
+              each tab and css but one javascript file.It has afunctional
+              contact form.
+            </p>
+            <p>Languages: HTML: 45%, CSS: 35%, Javascript- 10%</p>
+            <div class="project__links">
+              <a href="#"
+                ><span class="icon__project"
+                  ><i class="uil uil-github"></i></span
+              ></a>
+              <button>Live preview</button>
+            </div>
+          </div>
+        </article>
       </article>
       <article>
-        <div class="project__image">
-          <img src="images/course3.png" alt="" />
-        </div>
-        <div class="project__info">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-            ducimus excepturi accusantium doloribus quis officia placeat
-            similique maiores corrupti dignissimos neque aliquam alias mollitia
-            quo, a praesentium enim tenetur quae!
-          </p>
-        </div>
+        <h2>Wordpress Ecommerce website</h2>
+        <article class="project__info-container">
+          <div class="project__image">
+            <img src="images/ecommerce.png" alt="" />
+          </div>
+          <div class="project__info">
+            <p>
+              This is a fully functional wordpress ecommerce website with
+              functional payment gateways and contact page.
+            </p>
+            <p>
+              Technologies: wordpress, woocommerce, elementor, paypal plugin
+            </p>
+            <div class="project__links">
+              <a href="#"
+                ><span class="icon__project"
+                  ><i class="uil uil-github"></i></span
+              ></a>
+              <button>Live preview</button>
+            </div>
+          </div>
+        </article>
       </article>
       <article>
-        <div class="project__image">
-          <img src="images/images.jpg" alt="" />
-        </div>
-        <div class="project__info">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-            ducimus excepturi accusantium doloribus quis officia placeat
-            similique maiores corrupti dignissimos neque aliquam alias mollitia
-            quo, a praesentium enim tenetur quae!
-          </p>
-        </div>
+        <h2>Landing Page</h2>
+        <article class="project__info-container">
+          <div class="project__image">
+            <img src="images/onlinecourse.png" alt="" />
+          </div>
+          <div class="project__info">
+            <p>
+              This is a landing page for an online course and a multi-business
+              website.
+            </p>
+            <p>Technologies: wordpress, elementor</p>
+            <div class="project__links">
+              <!--             <a href="#"
+              ><span class="icon__project"><i class="uil uil-github"></i></span
+            ></a> -->
+              <button>Live preview</button>
+            </div>
+          </div>
+        </article>
       </article>
       <article>
-        <div class="project__image">
-          <img src="images/laptop.jpg" alt="" />
-        </div>
-        <div class="project__info">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-            ducimus excepturi accusantium doloribus quis officia placeat
-            similique maiores corrupti dignissimos neque aliquam alias mollitia
-            quo, a praesentium enim tenetur quae!
-          </p>
-        </div>
+        <h2>Medical Supplies Landing Page</h2>
+        <article class="project__info-container">
+          <div class="project__image">
+            <img src="images/collections.png" alt="" />
+          </div>
+          <div class="project__info">
+            <p>This is a landing page for a medical supplies company.</p>
+            <p>Languages: HTML: 45%, CSS: 35%, Javascript- 10%</p>
+            <div class="project__links">
+              <a href="#"
+                ><span class="icon__project"
+                  ><i class="uil uil-github"></i></span
+              ></a>
+              <button>Live preview</button>
+            </div>
+          </div>
+        </article>
+        <article>
+          <button>More Projects</button>
+        </article>
       </article>
     </section>
 
@@ -144,10 +209,8 @@
           <h2>Web design</h2>
           <div class="service__info">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-              nostrum at iusto inventore dolores, exercitationem reiciendis
-              provident porro laudantium voluptatibus rerum iste debitis quia
-              enim ullam ipsam amet soluta incidunt.
+              My main service is web development and I create visually
+              appealing,user-friendly websites.
             </p>
           </div>
         </article>
@@ -156,10 +219,9 @@
           <span></span>
           <div class="service__info">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-              nostrum at iusto inventore dolores, exercitationem reiciendis
-              provident porro laudantium voluptatibus rerum iste debitis quia
-              enim ullam ipsam amet soluta incidunt.
+              With strong foundation in programming languages such as
+              javascript, react and C language, I am very much equiped to fix
+              and develop a wide range of software applications.
             </p>
           </div>
         </article>
@@ -167,10 +229,8 @@
           <h2>Freelance</h2>
           <div class="service__info">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-              nostrum at iusto inventore dolores, exercitationem reiciendis
-              provident porro laudantium voluptatibus rerum iste debitis quia
-              enim ullam ipsam amet soluta incidunt.
+              I am an active freelancer on upwork. I am always ready for any
+              freelance work.
             </p>
           </div>
         </article>
