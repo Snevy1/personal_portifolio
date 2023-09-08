@@ -17,8 +17,24 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <nav>
-      <ul class="nav__container">
+    <header>
+      <nav>
+        <ul class="nav__container">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+      </nav>
+    </header>
+
+    <!-- <nav>
+      <ul class="nav__container2">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -26,10 +42,15 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
     <section class="svg" id="home">
       <article>
-        <img src="images/laptop.jpg" alt="" />
+        <img
+          src="images/welcome_cats.svg"
+          alt=""
+          class="welcome-cat"
+          width="50%"
+        />
       </article>
 
       <article class="welcome__explanation">
@@ -43,7 +64,7 @@
     <section class="about" id="about">
       <div class="container about__container">
         <div class="image__container">
-          <img src="images/profile-1.jpg" alt="" />
+          <img src="images/developer.svg" alt="" />
         </div>
         <div class="about__info">
           <p>
@@ -101,15 +122,37 @@
             </p>
             <p>Languages: Javascript- 80%, CSS: 15%, HTML: 5%</p>
             <div class="project__links">
-              <a href="#"
-                ><span class="icon__project"
-                  ><i class="uil uil-github"></i></span
-              ></a>
-              <button>Live preview</button>
+              <a href="https://github.com/Snevy1/Restauranta.git"
+                ><input type="button" value="Github"
+              /></a>
+              <a href="https://resturantnevy.netlify.app/"
+                ><input type="button" value="Live Preview"
+              /></a>
             </div>
           </div>
         </article>
       </article>
+
+      <article>
+        <h2>Amazon Best Sellers clone</h2>
+        <article class="project__info-container">
+          <div class="project__image">
+            <img src="images/amazon.png" alt="" />
+          </div>
+          <div class="project__info">
+            <p>
+              This is a clone of Amazon Best Sellers homepage . I used React.
+            </p>
+            <p>Languages: React</p>
+            <div class="project__links">
+              <a href="https://bestsellersamazonnevil.netlify.app/"
+                ><input type="button" value="Live Preview"
+              /></a>
+            </div>
+          </div>
+        </article>
+      </article>
+
       <article>
         <h2>Educational Website</h2>
         <article class="project__info-container">
@@ -124,11 +167,12 @@
             </p>
             <p>Languages: HTML: 45%, CSS: 35%, Javascript- 10%</p>
             <div class="project__links">
-              <a href="#"
-                ><span class="icon__project"
-                  ><i class="uil uil-github"></i></span
-              ></a>
-              <button>Live preview</button>
+              <a href="https://github.com/Snevy1/Educational-website.git"
+                ><input type="button" value="Github"
+              /></a>
+              <a href="https://snevy1.github.io/Educational-website/"
+                ><input type="button" value="Live Preview"
+              /></a>
             </div>
           </div>
         </article>
@@ -148,11 +192,10 @@
               Technologies: wordpress, woocommerce, elementor, paypal plugin
             </p>
             <div class="project__links">
-              <a href="#"
-                ><span class="icon__project"
-                  ><i class="uil uil-github"></i></span
-              ></a>
-              <button>Live preview</button>
+              <a href="#"><input type="button" value="Github" /></a>
+              <a href="https://fanjesvily.xyz/"
+                ><input type="button" value="Live Preview"
+              /></a>
             </div>
           </div>
         </article>
@@ -170,10 +213,9 @@
             </p>
             <p>Technologies: wordpress, elementor</p>
             <div class="project__links">
-              <!--             <a href="#"
-              ><span class="icon__project"><i class="uil uil-github"></i></span
-            ></a> -->
-              <button>Live preview</button>
+              <a href="https://wordpresslandingpage.netlify.app/"
+                ><input type="button" value="Live Preview"
+              /></a>
             </div>
           </div>
         </article>
@@ -188,16 +230,14 @@
             <p>This is a landing page for a medical supplies company.</p>
             <p>Languages: HTML: 45%, CSS: 35%, Javascript- 10%</p>
             <div class="project__links">
-              <a href="#"
-                ><span class="icon__project"
-                  ><i class="uil uil-github"></i></span
-              ></a>
-              <button>Live preview</button>
+              <a href="https://github.com/Snevy1/landing_page.git"
+                ><input type="button" value="Github"
+              /></a>
+              <a href="https://snevy1.github.io/landing_page/"
+                ><input type="button" value="Live Preview"
+              /></a>
             </div>
           </div>
-        </article>
-        <article>
-          <button>More Projects</button>
         </article>
       </article>
     </section>
@@ -242,31 +282,32 @@
       <div class="contact__container">
         <div class="socials">
           <div class="twitter">
-            <span><i class="uil uil-twitter"></i></span>
-            <p>Twitter handle</p>
+            <span class="socials"><i class="uil uil-twitter"></i></span>
+            <a href="https://twitter.com/Sneviy"><p>Twitter</p></a>
           </div>
           <div class="whatsapp">
-            <span><i class="uil uil-whatsapp-alt"></i></span>
-            <p>Twitter handle</p>
+            <span class="socials"><i class="uil uil-whatsapp-alt"></i></span>
+            <p>whatsapp</p>
           </div>
 
           <div class="Mobile">
-            <span><i class="uil uil-phone"></i></span>
-            <p>Twitter handle</p>
+            <span class="socials"><i class="uil uil-phone"></i></span>
+            <p>Mobile</p>
+            <p>+254746358820</p>
           </div>
           <div class="Github">
-            <span><i class="uil uil-github"></i></span>
-            <p>Twitter handle</p>
+            <span class="socials"><i class="uil uil-github"></i></span>
+            <a href="https://github.com/Snevy1"><p>Github</p></a>
           </div>
         </div>
         <div class="form">
-          <form action="">
+          <form action="https://formspree.io/f/xjvqrdba" method="post">
             <label for="name">First Name</label>
             <input type="text" placeholder="First Name" id="name" />
             <label for="email">EMAIL</label>
             <input type="email" placeholder="Email" />
             <label for="text">Message</label>
-            <textarea name="message" id="text" cols="30" rows="10"></textarea>
+            <textarea name="message" id="text" cols="30" rows="5"></textarea>
             <input type="submit" class="btn" />
           </form>
         </div>
